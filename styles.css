@@ -1,0 +1,375 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Body Styling */
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  background-color: #e7e7e3;
+  line-height: 1.6;
+  padding-top: 70px; /* Content Padding to Account for Fixed Header */
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Consistent Styling for All h2 Elements */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Header Styling */
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #4caf50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header img {
+  width: 200px;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-bar ul li {
+  list-style: none !important;
+  margin: 0 20px;
+  padding: 5px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 1000;
+  font-size: 2rem;
+  transition: color 0.3s;
+  letter-spacing: -2px;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  padding-top: 300px;
+}
+
+#hero > h2 {
+  font-size: 2.5rem; /* Specific size for Hero Section */
+}
+
+/* Contact Us Section */
+#contact-us {
+  background-color: #555555;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact-us ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#contact-us li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#contact-us a {
+  color: #d49f00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact-us a:hover {
+  color: #ffb300;
+}
+
+#contact-us span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Who We Are Section */
+#who-we-are {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  padding-top: 200px;
+}
+
+.video {
+  max-width: 100%;
+}
+
+#video {
+  width: 700px;
+  height: 315px;
+  max-width: 100%;
+}
+
+/* Recipe Section */
+#recepies {
+  text-align: center;
+  padding: 40px;
+}
+
+#recepies h2 {
+  font-size: 2.2rem; /* Specific size for Recipe Section */
+}
+
+#recepies p {
+  text-align: center;
+  padding: 40px;
+}
+
+.menu,
+.receipe-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  justify-content: center;
+}
+
+.menu img,
+.receipe-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menu img:active,
+.receipe-card img:active {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+/* Join Us Section */
+#join-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+#join-us h2 {
+  font-size: 2.2rem; /* Specific size for Join Us Section */
+}
+
+/* Newsletter */
+.newsletter {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Form */
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#email {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: grey;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4caf50;
+}
+
+/* Subscription Section */
+.subscription {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f3f4f6;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #e0e4e8;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product > .level {
+  background-color: #8bc34a;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.product > h2 {
+  margin-top: 15px;
+  color: #333333;
+  font-size: 1.8rem; /* Specific size for Product Titles */
+}
+
+.product > ol {
+  margin: 15px 0;
+  color: #555555;
+  list-style-type: none;
+  padding: 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.product > ol > li:last-child {
+  border-bottom: none;
+}
+
+.product > p {
+  color: #d49f00;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #header,
+  #contact-us {
+    flex-direction: column;
+  }
+
+  #recepies h2,
+  #join-us h2,
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  #nav-link {
+    padding: 10px 0;
+  }
+
+  .product {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  #header img {
+    width: 80px;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background: #4caf50;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    display: none;
+  }
+
+  .nav-bar.active ul {
+    display: flex;
+  }
+}
+
+/* Optional Button Styling */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}

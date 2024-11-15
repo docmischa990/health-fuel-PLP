@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <!-- ! Image Logo -->
+        <div class="logo">
+          <img
+            id="header-img"
+            src="Logo/HEALTHFUEL.png"
+            alt="Health Fuel Logo"
+          />
+        </div>
+
+        <!-- ! Navigation Elements -->
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#who-we-are">Who We Are</a></li>
+            <li><a class="nav-link" href="#recipes">Recipes</a></li>
+            <li><a class="nav-link" href="#join-us">Join Us</a></li>
+            <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <!-- ! Section 1 hero -->
+      <section id="hero">
+        <h2>Health Fuel: Your Personal Guide to Wellness 🌱</h2>
+        <p>
+          Experience a fresh approach to health and wellness with Health Fuel,
+          your trusted partner for expert guidance, nourishing recipes, and
+          tailored lifestyle advice. With Health Fuel, you’ll find practical
+          wellness tips, easy-to-follow recipe cards, and actionable strategies
+          designed to support your journey to better health. Whether you're
+          looking to improve nutrition, gain mental clarity, or build holistic
+          habits, Health Fuel provides the insights and resources you need to
+          thrive.
+        </p>
+        <p>
+          Embrace a healthier, happier lifestyle with Health Fuel—where wellness
+          is simple, accessible, and designed to fit your life.
+        </p>
+      </section>
+
+      <!-- ! Section 2 Who We Are -->
+      <section id="who-we-are">
+        <div class="video">
+          <iframe
+            id="video"
+            src="Video/Health-Fuel-Intro-Vid.mp4"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- ! Section 3 Recipes -->
+      <section id="recipes">
+        <h2>Menu</h2>
+        <div class="menu">
+          <img src="Recipes/Menu1.png" />
+          <img src="Recipes/Menu2.png" />
+          <img src="Recipes/Menu3.png" />
+        </div>
+        <h2>Recipe</h2>
+        <p>Enjoy this free recipe card. Happy Cooking. 😀</p>
+        <div class="receipe-card">
+          <img src="Recipes/cajun-chicken-1.png" />
+          <img src="Recipes/cajun-chicken-2.png" />
+          <img src="Recipes/cajun-chicken-3.png" />
+        </div>
+      </section>
+
+      <!-- ! Section 4 Join Us -->
+      <section id="join-us">
+        <div class="newsletter">
+          <h2>Sign up to our weekly news letter 😊</h2>
+          <form id="form" action="#">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <input id="submit" type="submit" value="Sign up" class="btn" />
+          </form>
+        </div>
+
+        <!-- ! Subscriptions -->
+        <div class="subscription">
+          <!-- * Tier 1 -->
+          <div class="product" id="basic">
+            <div class="level">Basic Fuel</div>
+            <h2>£2.99</h2>
+            <p>
+              <strong>Ideal For:</strong> Beginners looking for guidance and
+              easy wellness tips
+            </p>
+            <ol>
+              <li>Weekly wellness tips and motivational articles</li>
+              <li>5 curated recipe cards per month</li>
+              <li>Access to a monthly live Q&A with wellness experts</li>
+              <li>
+                Basic wellness tracking templates (e.g., food journal, water
+                intake)
+              </li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+
+          <!-- * Tier 2 -->
+          <div class="product" id="advanced">
+            <div class="level">Advanced Fuel</div>
+            <h2>£7.99</h2>
+            <p>
+              <strong>Ideal For:</strong> Those ready to dive deeper into their
+              wellness journey with added support.
+            </p>
+            <ol>
+              <li>Everything in Basic Fuel</li>
+              <li>
+                15 curated recipe cards per month with detailed nutrition info
+              </li>
+              <li>
+                Personalized wellness advice based on monthly health goals
+              </li>
+              <li>
+                Access to an exclusive online community for peer support and
+                expert tips
+              </li>
+              <li>
+                Monthly wellness e-guide (e.g., stress management, sleep
+                improvement)
+              </li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+
+          <!-- * Tier 3 -->
+          <div class="product" id="premium">
+            <div class="level">Premium Fuel</div>
+            <h2>£14.99</h2>
+            <p>
+              <strong>Ideal For:</strong> Individuals dedicated to holistic
+              wellness and ongoing personalized support.
+            </p>
+            <ol>
+              <li>Everything in Advanced Fuel</li>
+              <li>
+                30 curated recipe cards per month, including premium recipes for
+                specific diets
+              </li>
+              <li>1-on-1 monthly consultation with a wellness coach</li>
+              <li>Personalized workout recommendations</li>
+              <li>
+                Monthly wellness report with progress insights and tailored
+                recommendations
+              </li>
+              <li>Early access to new features and content releases</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ! Section 5 Contact Us -->
+
+      <footer id="contact-us">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>
+            <a
+              href="mailto:contact@healthfuel.com?subject=Inquiry%20about%20Health%20Fuel&body=Hello%20Health%20Fuel%20Team,%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services.%20"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <span>Copyright 2024, Health Fuel</span>
+      </footer>
+    </div>
+  </body>
+</html>
