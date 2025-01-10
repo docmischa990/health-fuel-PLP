@@ -44,13 +44,6 @@ HealthFuel/
 - Contact Form: Users can sign up for the newsletter and reach out for inquiries.
 
 
-## 📽️ Screen Recording
-
-Here’s a demonstration of the Health Fuel landing page in action:
-
-To view the recording directly, click here.
-
-
 ## 💻 Installation
 
 To run this project locally:
